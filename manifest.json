@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "my pet Snorlax",
+  "version": "1.0",
+  "description": "a roaming Snorlax will keep you company :)",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "icons": {
+    "48": "icons/pokeball.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["pixel-pet.js"],
+      "css": ["style/pet.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "pets/snorlax_rock.png",
+        "pets/snorlax_sleep.png"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
