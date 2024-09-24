@@ -23,7 +23,8 @@
     {
       "resources": [
         "pets/snorlax_rock.png",
-        "pets/snorlax_sleep.png"
+        "pets/snorlax_sleep.png",
+        "pets/snorlax_sit.png"
       ],
       "matches": ["<all_urls>"]
     }
